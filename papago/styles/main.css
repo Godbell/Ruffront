@@ -1,0 +1,74 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: centerx;
+  gap: 8px;
+  width: 100%;
+  max-width: 1288px;
+
+  margin-top: 57px;
+  margin-left: 59px;
+  margin-right: 59px;
+  position: absolute;
+}
+
+.translation-box {
+  flex: 1;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  min-height: 343px;
+  display: flex;
+  flex-direction: column;
+}
+
+.translation-box-header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 8px;
+  height: 52px;
+}
+
+.translation-box-header > div {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.translation-box-header > div > img {
+  width: 23px;
+  height: 20px;
+}
+
+.translation-box-header > div > span {
+  font-size: 18px;
+}
+
+.translation-box-header-placeholder {
+  height: 52px;
+}
+
+.translation-box-content-area {
+  flex: 1;
+}
+
+.translation-box-footer {
+  height: 62px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
