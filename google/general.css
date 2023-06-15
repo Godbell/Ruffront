@@ -9,3 +9,11 @@ html {
   padding: 0;
   min-width: 400px;
 }
+
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: Apple SD Gothic Neo, arial, sans-serif;
+  color: #bdc1c6;
+}

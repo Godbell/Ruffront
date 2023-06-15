@@ -1,3 +1,69 @@
 body {
   background-color: #202124;
 }
+
+header {
+  height: 60px;
+  width: 100%;
+  padding: 6px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-google-info-link {
+  margin-left: 15px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.header-store-link {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.header-right-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+
+  flex: 1;
+  color: white;
+  font-size: 13px;
+  padding-right: 4px;
+}
+
+.header-right-panel-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-right-panel-link {
+  height: 24px;
+  line-height: 24px;
+}
+
+.header-circular-button {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+}
+
+.header-circular-button > div {
+  border-radius: 50%;
+}
+
+.header-profile-img-wrapper {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.header-menu-icon-wrapper {
+  padding: 4px;
+}
