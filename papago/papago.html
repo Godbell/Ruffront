@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="styles/header.css" />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
   </head>
   <body>
     <header>
@@ -42,26 +43,149 @@
     </header>
     <main>
       <div class="content-container">
+        <!-- left -->
         <div class="translation-box">
           <div class="translation-box-header-placehoder"></div>
           <div class="translation-box-content-area"></div>
-          <div class="translation-box-footer"></div>
+          <div class="translation-box-footer">
+            <div class="translation-box-footer-content">
+              <div class="translation-box-footer-button">
+                <img
+                  class="translation-box-footer-button-image"
+                  src="https://papago.naver.com/bc1f6c2122c7d3e5c1bf3a9feb53f255.png"
+                />
+              </div>
+              <div class="translation-box-footer-button">
+                <img
+                  class="translation-box-footer-button-image"
+                  src="https://papago.naver.com/78cef6a801f2b67b73966d965b43677c.png"
+                />
+              </div>
+            </div>
+            <div class="translate-button-wrapper">
+              <div id="auto-completion-switch">
+                <input type="checkbox" />
+                <span>자동완성</span>
+              </div>
+              <button id="translate-button">번역하기</button>
+            </div>
+          </div>
         </div>
-        <div class="translation-box">
+        <!-- right -->
+        <div class="translation-box translation-box-right">
           <div class="translation-box-header-placehoder"></div>
           <div class="translation-box-content-area"></div>
-          <div class="translation-box-footer"></div>
+          <div class="translation-box-footer">
+            <div class="translation-box-footer-content">
+              <div class="translation-box-footer-button">
+                <img
+                  class="translation-box-footer-button-image"
+                  src="https://papago.naver.com/bc1f6c2122c7d3e5c1bf3a9feb53f255.png"
+                />
+              </div>
+              <div class="translation-box-footer-button">
+                <img
+                  class="translation-box-footer-button-image"
+                  src="https://papago.naver.com/78cef6a801f2b67b73966d965b43677c.png"
+                />
+              </div>
+              <div class="translation-box-footer-button">
+                <img
+                  class="translation-box-footer-button-image"
+                  src="https://papago.naver.com/d51a31d37fbe17146c780a3a21888e66.png"
+                />
+              </div>
+              <div class="translation-box-footer-button">
+                <img
+                  class="translation-box-footer-button-image"
+                  src="https://papago.naver.com/68cb897393a03dde443b907a66da36dd.png"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div class="translation-box-header">
           <div>
             <span>언어 감지</span>
-            <img
-              src="https://papago.naver.com/4d31b24d041c26615b62b1dc88263316.png"
-            />
+            <div class="language-image-switch-button-wrapper">
+              <img
+                class="language-image-switch-button"
+                src="https://papago.naver.com/4d31b24d041c26615b62b1dc88263316.png"
+              />
+            </div>
           </div>
           <div><span>한국어</span></div>
         </div>
       </div>
+      <div class="website-translation-box-wrapper">
+        <div class="website-translation-box">
+          <span>웹사이트 번역</span>
+          <div class="website-translation-url">
+            <input placeholder="URL을 입력하세요." />
+            <div class="website-translation-language-selector">
+              <select id="">
+                <option value="0">한국어</option>
+              </select>
+            </div>
+          </div>
+          <button>→</button>
+        </div>
+      </div>
     </main>
+    <div class="banner">
+      <div class="banner-upper">
+        <div class="banner-upper-slide-notice">
+          <span class="banner-upper-slide-notice-tag">NEW</span>
+          <span class="banner-upper-slide-notice-title">
+            <strong>[APP]</strong>
+            단어만 모아 학습하는, 파파고 에듀 단어장 출시!
+          </span>
+        </div>
+        <div class="banner-upper-sns-links">
+          <a class="sns-link facebook-link">
+            <img
+              src="https://papago.naver.com/84091cc03d731a16e6a1dcec1b7cca94.png"
+            />
+          </a>
+          <a class="sns-link naver-blog-link">
+            <img
+              src="https://papago.naver.com/af6ffd01aa75859e6b23db02cd8ea6a9.png"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="banner-under">
+        <div class="app-download-metadata">
+          <img
+            class="app-download-metadata-icon"
+            src="https://papago.naver.com/e3bff6deb50f078fe094f764fac152e8.png"
+          />
+          <span class="app-download-metadata-text">APP Download</span>
+        </div>
+        <button class="app-download-language-selector">
+          <option value="0">한국어</option>
+        </button>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-links">
+        <div class="footer-links-line">
+          <span>이용약관</span>
+          <span><strong>개인정보처리방침</strong></span>
+          <span><strong>책임의 한계와 법적고지</strong></span>
+        </div>
+        <div class="footer-links-line footer-links-line-sub">
+          <span>고객센터</span>
+          <span>의견제안</span>
+          <span>준수사항</span>
+          <span>품질 개선 동의</span>
+          <span>단축키</span>
+        </div>
+        <div class="footer-links-line footer-links-line-sub">
+          <span><strong>제휴∙API 이용문의</strong></span>
+        </div>
+      </div>
+      <a class="footer-brand-text">ⓒ NAVER Corp.</a>
+    </footer>
   </body>
 </html>

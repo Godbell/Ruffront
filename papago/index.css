@@ -1,3 +1,83 @@
+@font-face {
+  font-display: auto;
+  font-family: noto;
+  font-style: normal;
+  font-weight: 400;
+  src: local("noto");
+  src: url(./fonts/a007a9d748318d7da21299825d373049.woff) format("woff");
+}
+
+@font-face {
+  font-display: auto;
+  font-family: notobold;
+  font-style: normal;
+  src: local("notobold");
+  src: url(./fonts/16d53d1f9b1da1419e75e9805aa3f3c8.woff) format("woff");
+}
+
+@font-face {
+  font-display: auto;
+  font-family: notokr;
+  font-style: normal;
+  font-weight: 400;
+  src: local("notokr");
+  src: url(./fonts/4e2910267e88d635a5b26172ee62786a.woff2) format("woff2"),
+    url(./fonts/53e1309e4fc9372afba4fd8f872a7aa5.woff) format("woff");
+}
+
+@font-face {
+  font-display: auto;
+  font-family: notokrbold;
+  font-style: normal;
+  src: local("notokrbold");
+  src: url(./fonts/c18403ddf95b7cb8dd61b1f2539b11dd.woff2) format("woff2"),
+    url(./fonts/a123e4ed0d51aa4487d91274a452a981.woff) format("woff");
+}
+
+@font-face {
+  font-display: auto;
+  font-family: notojp;
+  font-style: normal;
+  font-weight: 400;
+  src: local("notokrjp");
+  src: url(./fonts/03a2f0b58ecdd42930803234be70e4f2.woff2) format("woff2"),
+    url(./fonts/ddba8290fdfea9d129578880dbc0a7b3.woff) format("woff");
+}
+
+@font-face {
+  font-display: auto;
+  font-family: notojpbold;
+  font-style: normal;
+  src: local("notokrjpbold");
+  src: url(./fonts/1ad3ec938c186111a002e6c273e0c6e4.woff2) format("woff2"),
+    url(./fonts/d3507dcee3290889ac7aed5bbb2fcf11.woff) format("woff");
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo,
+      helvetica, noto, notojp, notokr, Microsoft YaHei, Malgun Gothic, 맑은 고딕,
+      Dotum, 돋움, sans-serif;
+  }
+}
+
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+select,
+table,
+textarea {
+  font-family: Helvetica, Microsoft YaHei, Apple SD Gothic Neo, Malgun Gothic,
+    맑은 고딕, Dotum, 돋움, sans-serif;
+  font-size: 12px;
+  line-height: 1.25em;
+}
+
 *,
 *::before,
 *::after {
@@ -12,6 +92,9 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
+  font-family: noto, notojp, notokr, Helvetica, Microsoft YaHei,
+    Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, Dotum, 돋움, sans-serif;
 }
 
 button {
@@ -19,4 +102,21 @@ button {
   padding: 0;
   border: 0;
   background-color: transparent;
+  font-family: inherit;
+}
+
+input {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+select {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-family: inherit;
 }
