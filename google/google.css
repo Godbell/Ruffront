@@ -9,7 +9,7 @@ a:hover {
 
 body {
   background-color: #202124;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 header {
@@ -93,6 +93,7 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -203,7 +204,7 @@ main {
 
 .bottom-area-placeholder {
   width: 100%;
-  flex: 1 0;
+  flex: 1 0 241px;
 }
 
 .banner-current-country {
@@ -218,6 +219,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-shrink: 0;
 }
 
 footer {
@@ -230,6 +232,7 @@ footer {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  flex-shrink: 0;
 }
 
 footer > div {
@@ -248,5 +251,17 @@ footer a {
 @media screen and (max-width: 1200px) {
   footer {
     justify-content: center;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  .logo-area-placeholder {
+    height: 92px;
+  }
+
+  .bottom-area-placeholder {
+    height: 241px;
+    min-height: 0px;
+    flex-shrink: 1;
   }
 }
