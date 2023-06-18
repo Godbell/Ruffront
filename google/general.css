@@ -11,9 +11,16 @@ html {
 }
 
 body,
-input,
-button {
-  font-size: 14px;
+button,
+textarea {
   font-family: Apple SD Gothic Neo, arial, sans-serif;
   color: #bdc1c6;
+}
+
+textarea,
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
 }

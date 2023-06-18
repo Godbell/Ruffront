@@ -11,6 +11,7 @@ header {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  font-size: 14px;
 }
 
 .header-google-info-link {
@@ -36,6 +37,7 @@ header {
   color: white;
   font-size: 13px;
   padding-right: 4px;
+  font-family: arial, sans-serif;
 }
 
 .header-right-panel-menu {
@@ -66,4 +68,105 @@ header {
 
 .header-menu-icon-wrapper {
   padding: 4px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-area-placeholder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 290px;
+}
+
+.search-bar-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 20px 18px 20px;
+  flex: 1;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 584px;
+  height: 48px;
+  padding-left: 14px;
+  padding-right: 8px;
+  border-radius: 40px;
+  border: 1px solid #5f6368;
+}
+
+.search-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 33px;
+  padding-right: 13px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar-button {
+  width: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.search-bar-button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.search-bar-input-area {
+  resize: none;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  height: 27px;
+  overflow-x: hidden;
+  flex: 1;
+}
+
+.search-bar-input-area:focus {
+  outline: 0;
+}
+
+.below-search-bar-button-area {
+  width: 584px;
+  height: 58px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.below-search-bar-button {
+  min-width: 54px;
+  height: 36px;
+  font-size: 14px;
+  color: #e8eaed;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: #303134;
+  line-height: 27px;
+  border-radius: 4px;
 }
