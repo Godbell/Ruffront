@@ -244,3 +244,9 @@ footer a {
   color: #9aa0a6;
   font-size: 14px;
 }
+
+@media screen and (max-width: 1200px) {
+  footer {
+    justify-content: center;
+  }
+}
