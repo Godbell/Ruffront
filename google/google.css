@@ -1,3 +1,8 @@
+button,
+a {
+  cursor: pointer;
+}
+
 body {
   background-color: #202124;
   overflow-x: hidden;
@@ -89,9 +94,9 @@ main {
 
 .search-bar-area {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
   padding: 26px 20px 18px 20px;
   width: 100%;
 }
@@ -100,12 +105,13 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 584px;
   height: 48px;
   padding-left: 14px;
   padding-right: 8px;
   border-radius: 40px;
   border: 1px solid #5f6368;
+
+  flex: 0 1 580px;
 }
 
 .search-icon-wrapper {
@@ -139,7 +145,7 @@ main {
   line-height: 22px;
   height: 27px;
   overflow-x: hidden;
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 .search-bar-input-area:focus {
