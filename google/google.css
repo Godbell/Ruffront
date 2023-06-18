@@ -3,6 +3,10 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   background-color: #202124;
   overflow-x: hidden;
@@ -59,20 +63,29 @@ header {
 .header-circular-button {
   width: 48px;
   height: 48px;
-  padding: 8px;
+  padding: 4px;
 }
 
-.header-circular-button > div {
+.header-circular-button > a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
-.header-profile-img-wrapper {
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
+.header-circular-button > a:hover {
+  background-color: rgba(232, 234, 237, 0.08);
 }
 
-.header-menu-icon-wrapper {
+.header-circular-button img {
+  border-radius: 50%;
+}
+
+.header-menu-button-img-wrapper {
+  padding: 8px;
+}
+
+.header-profile-img-wrapper {
   padding: 4px;
 }
 
